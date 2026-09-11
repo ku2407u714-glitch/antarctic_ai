@@ -1,0 +1,21 @@
+/* Focused visual polish layered over the shared layout. */
+.page-header{background:linear-gradient(115deg,rgba(255,255,255,.68),rgba(224,242,237,.42));box-shadow:inset 0 -1px 0 rgba(16,39,52,.03)}
+.page-header h1{max-width:760px;text-wrap:balance}
+.page-header .eyebrow{display:flex;align-items:center;gap:9px}
+.page-header .eyebrow:before{content:"";width:24px;height:1px;background:var(--aqua)}
+.panel,.metric,.ice-card,.route-option{animation:rise-in .45s ease both}
+.metric:nth-child(2),.ice-card:nth-child(2),.route-option:nth-child(2){animation-delay:.05s}.metric:nth-child(3),.ice-card:nth-child(3),.route-option:nth-child(3){animation-delay:.1s}.metric:nth-child(4),.ice-card:nth-child(4),.route-option:nth-child(4){animation-delay:.15s}
+.ice-card{overflow:hidden;border-top:3px solid var(--aqua)}
+.ice-card:nth-child(3){border-top-color:var(--red)}
+.ice-card:hover{box-shadow:0 18px 38px rgba(16,39,52,.16);transform:translateY(-6px)}
+.ice-card h3{letter-spacing:-.03em}
+.map-section .map-wrap{border-radius:4px;overflow:hidden;box-shadow:0 20px 45px rgba(16,39,52,.14)}
+.map-section .section-heading h2{position:relative}.map-section .section-heading h2:after{content:"";display:inline-block;width:35px;height:3px;background:var(--lime);vertical-align:middle;margin-left:12px}
+.map-legend{backdrop-filter:blur(7px);border:1px solid rgba(255,255,255,.18);border-radius:2px}
+.button:focus-visible,.nav-links a:focus-visible,.segmented button:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.input-grid input:hover,.route-panel select:hover{border-color:#9bc8c3;background:#fff}
+.live-pill{box-shadow:0 0 0 4px rgba(199,232,107,.08)}
+.synthetic-banner{box-shadow:0 4px 14px rgba(16,39,52,.04)}
+@keyframes rise-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.page-header h1{font-size:clamp(38px,10vw,50px)}.page-header .eyebrow{gap:6px}.map-section .section-heading h2:after{width:22px;margin-left:7px}.synthetic-banner{position:relative}}
+@media(prefers-reduced-motion:reduce){.panel,.metric,.ice-card,.route-option{animation:none}.ice-card:hover{transform:none}}

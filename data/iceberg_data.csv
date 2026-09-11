@@ -1,0 +1,8 @@
+iceberg_id,date,latitude,longitude,speed,direction,risk
+A01,2026-09-10,-70.2,25.4,0.8,Southeast,Medium
+B07,2026-09-10,-68.6,18.1,0.5,East,Low
+C12,2026-09-10,-72.4,31.8,1.1,South,High
+D03,2026-09-10,-66.9,27.6,0.4,Northeast,Low
+E18,2026-09-10,-74.1,20.2,0.7,Southeast,Medium
+F22,2026-09-10,-69.4,35.5,0.6,East,Medium
+G05,2026-09-10,-71.3,14.4,0.3,North,Low

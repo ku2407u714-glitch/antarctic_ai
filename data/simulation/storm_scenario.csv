@@ -1,0 +1,4 @@
+timestamp,wind_speed_kmh,wind_direction,pressure_hpa,precipitation_mm,storm_risk
+2026-09-11T09:00:00Z,24,SW,986,0.4,34
+2026-09-11T12:00:00Z,31,W,978,2.1,58
+2026-09-11T15:00:00Z,39,NW,969,4.8,76
